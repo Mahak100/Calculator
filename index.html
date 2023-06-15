@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Scientific Calculator</title>
+
+    <body>
+        <div class="container">
+            <u><h1>Scientific Calculator</h1></u>
+            <div class="calculate">
+
+                <input id="screen" type="text" placeholder="0">
+                <input id="ans" type="text">
+
+                <div class="buttons">
+                    <button class="btn" id="ce" onclick="clr()">C</button>
+                    <button class="btn" onclick="oper('!')">x!</button>
+                    <button class="btn" onclick="oper('^(')">^</button>
+                    <button class="btn" onclick="insert('(')">(</button>
+                    <button class="btn" onclick="oper(')')">)</button>
+                    <button class="btn" id="ac" onclick="backspc()"><i class="fa-solid fa-delete-left"></i></button>
+
+                    <button class="btn" onclick="oper('x2^(')">2<sup>x</sup></button>
+                    <button class="btn" onclick="oper('x10^(')">10<sup>x</sup></button>
+                    <button class="btn" onclick="oper('xe^(')">e<sup>x</sup></button>
+                    <button class="btn" onclick="insert('1/')">1/x</button>
+                    <button class="btn" onclick="insert('abs(')">|x|</button>
+                    <button class="btn" onclick="oper('%')">%</button>
+
+                    <button class="btn" onclick="insert('sin(')">sin</button>
+                    <button class="btn" onclick="insert('cos(')">cos</button>
+                    <button class="btn" onclick="insert('tan(')">tan</button>
+                    <button class="btn" onclick="pi()">&Pi;</button>
+                    <button class="btn" onclick="insert('e')">e</button>
+                    <button class="btn" onclick="oper('/')">&divide;</button>
+
+                    <button class="btn" onclick="rad()">Rad</button>
+                    <button class="btn" onclick="deg()">Deg</button> 
+                    <button class="btn" id="seven" onclick="insert('7')">7</button>
+                    <button class="btn" id="eight" onclick="insert('8')">8</button>
+                    <button class="btn" id="nine" onclick="insert('9')">9</button>                    
+                    <button class="btn" onclick="oper('*')">×</button>
+
+                    <button class="btn" onclick="log()">log</button>
+                    <button class="btn" onclick="ln()">ln</button>
+                    <button class="btn" id="four" onclick="insert('4')">4</button>
+                    <button class="btn" id="five" onclick="insert('5')">5</button>
+                    <button class="btn" id="six" onclick="insert('6')">6</button>
+                    <button class="btn" onclick="oper('-')">-</button>
+
+                    <button class="btn" onclick="oper('^2')">x<sup>2</sup></button>
+                    <button class="btn" onclick="sq_rt()">&radic;x</button>
+                    <button class="btn" id="one" onclick="insert('1')">1</button>
+                    <button class="btn" id="two" onclick="insert('2')">2</button>
+                    <button class="btn" id="three" onclick="insert('3')">3</button>
+                    <button class="btn" onclick="oper('+')">+</button>
+
+                    <button class="btn" onclick="oper('^3')">x<sup>3</sup></button>
+                    <button class="btn" onclick="cb_rt()"><sup>3</sup>&radic;x</button>
+                    <button class="btn" onclick="sign()">+/-</button>
+                    <button class="btn" id="zero" onclick="insert('0')">0</button>
+                    <button class="btn" onclick="insert('.')">.</button>
+                    <button class="btn" id="equal" onclick="solve()">=</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
